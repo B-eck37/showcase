@@ -3,7 +3,13 @@ import React, { Component } from 'react';
 export default class Sum extends Component {
 render() {
     return (
-         <p>Sum Component</p>
+        <div>
+        <h4></h4>
+        <input></input>
+        <input></input>
+        <button></button>
+        <span></span>
+        </div>
      )
   }
 }

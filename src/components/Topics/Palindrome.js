@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 export default class Palindrome extends Component {
 render() {
     return (
-         <p>Palindrome Component</p>
+        <div>
+        <h4></h4>
+        <input></input>
+        <button></button>
+        <span></span>
+        </div>
      )
   }
 }
