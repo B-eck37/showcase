@@ -14,8 +14,9 @@ handleChange(val){
 }
 
 wordCheck(userInput){
-    var frontwards = userInput;
-    var backwards = userInput;
+    let lower = userInput.toLowerCase();
+    var frontwards = lower;
+    var backwards = lower;
     backwards = backwards.split('');
     backwards = backwards.reverse();
     backwards = backwards.join('');

@@ -15,7 +15,7 @@ handleChange(val){
 }
 
 updateArrays(userInput){
-    var arr =userInput.split(',');
+    var arr =userInput.split('');
     var evens = [];
     var odds = [];
 
@@ -37,8 +37,8 @@ render() {
 
             <input className="inputLine" onChange={event => this.handleChange(event.target.value)}></input>
             <button className="confirmationButton" onClick={() => {this.updateArrays(this.state.userInput)}}> Split </button>
-            <span className="resultsBox">Evens: {JSON.stringify(this.state.evenArray)} </span>
-            <span className="resultsBox">Odds: {JSON.stringify(this.state.oddArray)} </span>
+            <span className="resultsBox">Evens: {this.state.evenArray.length ?JSON.stringify(this.state.evenArray) : null} </span>
+            <span className="resultsBox">Odds: {this.state.evenArray.length ? JSON.stringify(this.state.oddArray) : null} </span>
        </div>   
      )
   }

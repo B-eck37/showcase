@@ -32,7 +32,7 @@ render() {
          <span className="puzzleText">Responses: {JSON.stringify(this.state.responses)} </span>
          <input className="inputLine" onChange={event => this.handleChange(event.target.value)}></input>
          <button className="confirmationButton" onClick={() => this.stringUpdate(this.state.userInput)}> Filter </button>
-         <span className="resultsBox filterStringRB">Filtered: {JSON.stringify(this.state.filteredArray)}</span>
+         <span className="resultsBox filterStringRB">Filtered: {this.state.filteredArray.length ? JSON.stringify(this.state.filteredArray) : null}</span>
          </div>
      )
   }
