@@ -8,7 +8,7 @@ export default class VowelBeGone extends Component {
             vowelResult: '',
         }
     }
-}
+
 
 handleChange(val){
     this.setState({userInput: val})
@@ -30,4 +30,5 @@ render(){
         <span className="resultsBox">Magic Result: {this.state.vowelResult}</span>
         </div>
     )
+}
 }
